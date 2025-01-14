@@ -1,5 +1,6 @@
 import Navbar from "./Components/Navbar";
 import Hero from "./Components/Hero";
+import Technologies from "./Components/Technologies";
 
 
 
@@ -13,6 +14,7 @@ const App = () => {
         <Navbar />
         <div className="mt-20">
           <Hero />
+          <Technologies/>
         </div>
       </div>
     </div>

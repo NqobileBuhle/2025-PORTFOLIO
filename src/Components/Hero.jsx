@@ -1,31 +1,38 @@
 import React from 'react';
 import { HERO_CONTENT } from '../constants';
+import ProfilePic from "../assets/Nqobile.jpg";
 
 const Hero = () => {
   return (
-    <div className='border-b border-neutral-900 pb-4 lg:mb-35 '>
-        <div className='flex flex-wrap'>
-            <div className='w-full lg:w-1/2'>
-            <div className='flex flex-col items-center lg:items-start'>
-                <h1 className='pb-16 text-6xl font-thin tracking-tight lg:mt-16 lg:text-8xl'>Nqobile Biyela</h1>
-                <span className='bg-gradient-to-r from-pink-300 via-slate-500 to purple-500 bg-clip-text text-4xl tracking-tight text-transparent'>
-                    Full Stack Developer
-
-                </span>
-                <p className='my-2 max-w-xl py-6 font-light  tracking-tighter'>
-                     {HERO_CONTENT}
-                     </p>
-            </div>
-            </div>
-        </div>
-        <div className='w-full lg:w-1/2 lg:p-8'>
-        <div className='flex justify-center'>
-            <img src=''alt=''/>
-        </div>
-        </div>
+    <div className='border-b border-neutral-900 pb-4 lg:mb-35'>
       
+      <div className='flex flex-wrap items-center'>
+        
+        <div className='w-full lg:w-1/2 px-4'>
+          <div className='flex flex-col items-center lg:items-start'>
+            <h1 className='pb-8 text-6xl font-thin tracking-tight lg:mt-16 lg:text-8xl'>
+              Nqobile Biyela
+            </h1>
+            <span className='bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-4xl tracking-tight text-transparent'>
+              Full Stack Developer
+            </span>
+            <p className='my-4 max-w-xl py-6 font-light tracking-tighter text-center lg:text-left'>
+              {HERO_CONTENT}
+            </p>
+          </div>
+        </div>
+
+        
+        <div className='w-full lg:w-1/2 flex justify-center px-4'>
+          <img
+            src={ProfilePic}
+            alt='Profile'
+            className='max-w-xs rounded-lg shadow-lg lg:max-w-md'
+          />
+        </div>
+      </div>
     </div>
   );
-}
+};
 
 export default Hero;
